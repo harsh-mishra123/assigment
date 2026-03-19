@@ -17,8 +17,8 @@ Backend API for the Organization Announcements Platform built with Express.js, M
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/ikshantshukla123/Assignment.git
-cd Assignment/backend
+git clone https://github.com/harsh-mishra123/assigment.git
+cd assigment/backend
 ```
 
 ### 2. Install dependencies
@@ -46,7 +46,10 @@ CORS_ORIGIN=http://localhost:3000
 
 **Example for production:**
 ```env
-CORS_ORIGIN=https://assignment-green-nine.vercel.app,http://localhost:3000
+CORS_ORIGIN=https://assigment-psi-five.vercel.app,http://localhost:3000
+NODE_ENV=production
+JWT_SECRET=your_strong_jwt_secret
+MONGO_URI=your_mongodb_connection_string
 ```
 
 ### 4. Run the server

@@ -16,8 +16,8 @@ A modern Next.js application for managing organizational announcements with real
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/ikshantshukla123/Assignment.git
-cd Assignment/frontend
+git clone https://github.com/harsh-mishra123/assigment.git
+cd assigment/frontend
 ```
 
 ### 2. Install dependencies
@@ -41,7 +41,7 @@ NEXT_PUBLIC_API_BASE_URL=http://localhost:4000
 
 **For production:**
 ```env
-NEXT_PUBLIC_API_BASE_URL=https://organization-announcements-backend.onrender.com
+NEXT_PUBLIC_API_BASE_URL=https://assigment-ickr.onrender.com
 ```
 
 ### 4. Run the development server
@@ -57,6 +57,21 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 Use the admin credentials set in the backend:
 - **Username**: admin (or from backend `INIT_ADMIN_USERNAME`)
 - **Password**: admin123 (or from backend `INIT_ADMIN_PASSWORD`)
+
+---
+
+## Deployment on Vercel
+
+### ⚠️ IMPORTANT: Environment Variables
+
+Vercel **does NOT** use `.env.production.local` files automatically.
+
+1. Go to your **Vercel Project Settings**
+2. Navigate to **Environment Variables**
+3. Add this variable:
+   - **Key**: `NEXT_PUBLIC_API_BASE_URL`
+   - **Value**: `https://assigment-ickr.onrender.com`
+4. **Redeploy** your project for changes to take effect
 
 ## Project Structure
 

@@ -99,7 +99,7 @@ NODE_ENV=development
 CORS_ORIGIN=http://localhost:3000
 
 # For production (comma-separated for multiple origins):
-# CORS_ORIGIN=https://assignment-green-nine.vercel.app,http://localhost:3000
+CORS_ORIGIN=https://assigment-psi-five.vercel.app,http://localhost:3000
 ```
 
 ### Frontend (`frontend/.env.local`)
@@ -121,8 +121,8 @@ NEXT_PUBLIC_API_BASE_URL=http://localhost:4000
 ### 1. Clone the repository
 
 ```bash
-git clone 
-cd Assignment
+git clone https://github.com/harsh-mishra123/assigment.git
+cd assigment
 ```
 
 ### 2. Backend setup
