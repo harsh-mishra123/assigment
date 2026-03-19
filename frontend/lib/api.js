@@ -1,11 +1,14 @@
 import { getToken } from "./auth";
-const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL;
+let API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL;
 
 if (!API_BASE) {
   console.error("ERROR: NEXT_PUBLIC_API_BASE_URL is not defined!");
   console.warn("Make sure to set NEXT_PUBLIC_API_BASE_URL in your .env.local file (development) or Vercel project settings (production)");
   throw new Error("NEXT_PUBLIC_API_BASE_URL is not defined");
 }
+
+// Remove trailing slash if present
+API_BASE = API_BASE.replace(/\/$/, '');
 
 console.log("API_BASE configured as:", API_BASE);
 
